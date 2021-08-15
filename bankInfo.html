@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Details</title>
+    <!-- Bootstrap CDN -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <h1 class="text-center p-3 mt-5 fs-1 text-info">Let's get some<span class="text-danger"> Money....</span></h1>
+        <section class="container bg-light">
+            <div class="row row-col-lg-3">
+                <div class="col bg-success text-center m-2 p-4">
+                    <h4 class="text-white">Deposit</h4>
+                    <h2 class="text-white">$<span id="deposite-total">00</span></h2>
+                </div>
+                <div class="col bg-warning text-center m-2 p-4">
+                    <h4 class="text-white">Withdraw</h4>
+                    <h2 class="text-white">$<span id="Withdraw-total">00</span></h2>
+                </div>
+                <div class="col bg-info text-center m-2 p-4">
+                    <h4 class="text-white">Balance</h4>
+                    <h2 class="text-white">$<span id="balance-total">1240</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-4 p-2">
+            <div class="row row-col-lg-2">
+
+                <div class="col bg-info m-2 p-4">
+                    <h4 class="text-white">Please Deposit</h4>
+
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Deposite Amount</span>
+                        <input id="deposite-input" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="$ Amount you want to deposite">
+                      </div>
+                      <button id="deposite-button" type="button" class="btn btn-primary">Deposite</button>
+                </div>
+
+                <div class="col bg-secondary m-2 p-4">
+                    <h4 class="text-white">Please Withdraw</h4>
+
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Deposite Amount</span>
+                        <input id="withdraw-input" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="$ Amount you want to Withdraw">
+                      </div>
+                      <button id="withdraw-button" type="button" class="btn btn-primary">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/bankInfo.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
